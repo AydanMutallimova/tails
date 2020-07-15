@@ -1,0 +1,54 @@
+/* :: 4.0 Search Wrapper */
+.search-wrapper {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    z-index: 200;
+    top: -80px;
+    left: 0;
+    background-color: #40ba37;
+    -webkit-transition-duration: 700ms;
+    transition-duration: 700ms; }
+    .search-wrapper form {
+      position: relative;
+      z-index: 1; }
+      .search-wrapper form input {
+        width: 90%;
+        height: 40px;
+        border: 2px solid #ffffff;
+        font-size: 12px;
+        font-style: italic;
+        padding: 0 20px;
+        margin: 15px 0; }
+        @media only screen and (max-width: 767px) {
+          .search-wrapper form input {
+            width: 80%; } }
+      .search-wrapper form button {
+        position: absolute;
+        width: 60px;
+        height: 40px;
+        z-index: 1;
+        top: 15px;
+        border: none;
+        right: 10%;
+        cursor: pointer;
+        outline: none; }
+        @media only screen and (max-width: 767px) {
+          .search-wrapper form button {
+            right: 20%; } }
+    .search-wrapper .close-btn {
+      position: absolute;
+      width: 70px;
+      height: 100%;
+      background-color: #000000;
+      line-height: 50px;
+      color: #ffffff;
+      text-align: center;
+      cursor: pointer;
+      line-height: 70px;
+      font-size: 12px;
+      right: 0;
+      top: 0;
+      z-index: 100; }
+    .search-wrapper.on {
+      top: 0; }
